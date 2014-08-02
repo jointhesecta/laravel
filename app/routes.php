@@ -17,20 +17,19 @@ Route::get('login', array('uses' => 'HomeController@showLogin'));
 // route to process the form
 Route::post('login', array('uses' => 'HomeController@doLogin'));
 
-Route::get('/', function()
-{
+Route::get('/', function () {
     return View::make('pages.home');
 });
-Route::get('about', function()
-{
+
+Route::get('about', function () {
     return View::make('pages.about');
 });
-Route::get('projects', function()
-{
+
+Route::get('projects', function () {
     return View::make('pages.projects');
 });
-Route::get('contact', function()
-{
+
+Route::get('contact', function () {
     return View::make('pages.contact');
 });
 
