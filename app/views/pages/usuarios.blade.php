@@ -1,5 +1,6 @@
 @extends('layouts.default')
 @section('content')
+
     <div class="page-title"> <i class="icon-custom-left"></i>
         <h3><strong>Editable</strong> tables</h3>
     </div>
@@ -19,7 +20,8 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 table-responsive table-red">
-                            <div id="table-editable_wrapper" class="dataTables_wrapper form-inline no-footer"><div class="row"><div class="col-md-6 filter-left"><div id="table-editable_filter" class="dataTables_filter"><label><input type="search" class="form-control" aria-controls="table-editable" placeholder="Search a user..."></label></div></div><div class="col-md-6"><div class="DTTT_container"><a class="btn btn-default DTTT_button DTTT_button_pdf" id="ToolTables_table-editable_0"><span>PDF</span><div style="position: absolute; left: 0px; top: 0px; width: 78px; height: 36px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_1" src="assets/plugins/datatables/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="78" height="36" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=78&amp;height=36" wmode="transparent"></div></a><a class="btn btn-default DTTT_button DTTT_button_print" id="ToolTables_table-editable_1" title="View print view"><span>Print</span></a><a class="btn btn-default DTTT_button DTTT_button_xls" id="ToolTables_table-editable_2"><span>Excel</span><div style="position: absolute; left: 0px; top: 0px; width: 85px; height: 36px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_2" src="assets/plugins/datatables/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="85" height="36" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=85&amp;height=36" wmode="transparent"></div></a><a class="btn btn-default DTTT_button DTTT_button_csv" id="ToolTables_table-editable_3"><span>CSV</span><div style="position: absolute; left: 0px; top: 0px; width: 76px; height: 36px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_3" src="assets/plugins/datatables/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="76" height="36" name="ZeroClipboard_TableToolsMovie_3" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=76&amp;height=36" wmode="transparent"></div></a></div></div></div><table class="table table-striped table-hover dataTable no-footer" id="table-editable" role="grid" aria-describedby="table-editable_info">
+
+                                <table class="table table-striped table-hover dataTable no-footer" id="table-editable" role="grid" aria-describedby="table-editable_info">
                                     <thead>
                                     <tr role="row"><th class="sorting_asc" rowspan="1" colspan="1" aria-label="First Name" style="width: 132px;">First Name</th><th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1" colspan="1" aria-label="Last Name: activate to sort column ascending" style="width: 126px;">Last Name</th><th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1" colspan="1" aria-label="Points: activate to sort column ascending" style="width: 87px;">Points</th><th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 114px;">Status</th><th class="text-center sorting" tabindex="0" aria-controls="table-editable" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="width: 287px;">Action</th></tr>
                                     </thead>
@@ -128,4 +130,5 @@
             </div>
         </div>
     </div>
+
 @stop

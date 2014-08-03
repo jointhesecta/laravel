@@ -19,6 +19,10 @@
 {{ HTML::script('assets/plugins/charts-morris/morris.min.js'); }}
 {{ HTML::script('assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); }}
 {{ HTML::script('assets/js/calendar.js'); }}
+{{ HTML::script('assets/plugins/datatables/dynamic/jquery.dataTables.min.js'); }}
+{{ HTML::script('assets/plugins/datatables/dataTables.bootstrap.js'); }}
+{{ HTML::script('assets/plugins/datatables/dataTables.tableTools.js'); }}
+{{ HTML::script('assets/js/table_editable.js'); }}
 {{ HTML::script('assets/js/dashboard.js'); }}
 <!-- END  PAGE LEVEL SCRIPTS -->
 {{ HTML::script('assets/js/application.js'); }}
