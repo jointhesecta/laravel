@@ -27,7 +27,8 @@ Route::get('/', function () {
 });
 
 Route::get('usuarios', function () {
-    return View::make('pages.usuarios');
+    $users = User::all();
+    return View::make('pages.usuarios')->with('users',  $users);;
 });
 
 
