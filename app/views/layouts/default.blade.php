@@ -3,31 +3,29 @@
 <head>
     @include('includes.head')
 </head>
-<body>
-<div class="container">
+<body data-page="dashboard">
 
-    <header class="row">
-        @include('includes.header')
-    </header>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    @include('includes.header')
+</nav>
 
-    <div id="main" class="row">
+<div id="wrapper">
 
-        <!-- sidebar content -->
-        <div id="sidebar" class="col-md-4">
-            @include('includes.sidebar')
-        </div>
+    <!-- sidebar content -->
+    <nav id="sidebar">
+        @include('includes.sidebar')
+    </nav>
 
-        <!-- main content -->
-        <div id="content" class="col-md-8">
-            @yield('content')
-        </div>
-
+    <!-- main content -->
+    <div id="main-content" class="dashboard">
+        @yield('content')
     </div>
 
-    <footer class="row">
-        @include('includes.footer')
-    </footer>
-
 </div>
+
+<footer class="row">
+    @include('includes.footer')
+</footer>
+
 </body>
 </html>
