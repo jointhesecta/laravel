@@ -32,4 +32,3 @@ Route::get('projects', function () {
 Route::get('contact', function () {
     return View::make('pages.contact');
 });
-
