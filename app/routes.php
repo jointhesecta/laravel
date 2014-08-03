@@ -11,15 +11,25 @@
 |
 */
 
-// route to show the login form
-Route::get('login', array('uses' => 'HomeController@showLogin'));
-
-// route to process the form
+Route::get('logout', function(){
+    Auth::logout();
+    return Redirect::to('/');
+});
 Route::post('login', array('uses' => 'HomeController@doLogin'));
 
 Route::get('/', function () {
-    return View::make('pages.home');
+    if (Auth::check())
+    {
+        return View::make('pages.home');
+    }else{
+        return View::make('pages.login');
+    }
 });
+
+Route::get('usuarios', function () {
+    return View::make('pages.usuarios');
+});
+
 
 Route::get('about', function () {
     return View::make('pages.about');

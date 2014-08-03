@@ -1,7 +1,16 @@
 <div id="main-menu">
 <ul class="sidebar-nav">
+
 <li class="current">
     <a href="index.html"><i class="fa fa-dashboard"></i><span class="sidebar-text">Dashboard</span></a>
+</li>
+<li>
+    <a href="#"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Gestión</span><span class="fa arrow"></span></a>
+    <ul class="submenu collapse">
+        <li>
+            <a href="/usuarios"><span class="sidebar-text">Usuarios</span></a>
+        </li>
+    </ul>
 </li>
 <li>
     <a href="#"><i class="glyph-icon flaticon-shopping80"></i><span class="sidebar-text">eCommerce</span>

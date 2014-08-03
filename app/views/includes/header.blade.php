@@ -181,7 +181,7 @@
 <li class="dropdown" id="user-header">
     <a href="#" class="dropdown-toggle c-white" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
         <img src="assets/img/avatars/avatar2.png" alt="user avatar" width="30" class="p-r-5">
-        <span class="username">Bob Nilson</span>
+        <span class="username">{{Auth::user()->name}}</span>
         <i class="fa fa-angle-down p-r-10"></i>
     </a>
     <ul class="dropdown-menu">
@@ -207,7 +207,7 @@
             <a href="lockscreen.html" title="Lock Screen">
                 <i class="glyph-icon flaticon-padlock23"></i>
             </a>
-            <a href="login.html" title="Logout">
+            <a href="/logout" title="Logout">
                 <i class="fa fa-power-off"></i>
             </a>
         </li>

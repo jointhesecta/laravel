@@ -15,17 +15,6 @@ class HomeController extends BaseController {
     |
     */
 
-    public function showWelcome()
-    {
-        return View::make('hello');
-    }
-
-    public function showLogin()
-    {
-        // show the form
-        return View::make('pages.login');
-    }
-
     public function doLogin()
     {
         // validate the info, create rules for the inputs
@@ -39,7 +28,7 @@ class HomeController extends BaseController {
 
         // if the validator fails, redirect back to the form
         if ($validator->fails()) {
-            return Redirect::to('login')
+            return View::make('pages.login')
                 ->withErrors($validator) // send back all errors to the login form
                 ->withInput(Input::except('password')); // send back the input (not the password) so that we can repopulate the form
         } else {
@@ -57,15 +46,15 @@ class HomeController extends BaseController {
                 // redirect them to the secure section or whatever
                 // return Redirect::to('secure');
                 // for now we'll just echo success (even though echoing in a controller is bad)
-                echo 'SUCCESS!';
+                return Redirect::to('/');
 
             } else {
 
                 // validation not successful, send back to form
-                return Redirect::to('login');
+                return View::make('pages.login');
 
             }
-
         }
     }
+
 }
