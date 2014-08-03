@@ -86,5 +86,4 @@
 {{ HTML::script('assets/js/account.js'); }}
 <!-- END PAGE LEVEL SCRIPTS -->
 </body>
-
 </html>
