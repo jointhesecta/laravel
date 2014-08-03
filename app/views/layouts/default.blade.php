@@ -21,6 +21,10 @@
         @yield('content')
     </div>
 
+    <nav id="menu-right">
+        @include('includes.right')
+    </nav>
+
 </div>
 
 <footer class="row">

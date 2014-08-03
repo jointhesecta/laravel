@@ -12,4 +12,5 @@
 {{ HTML::style('assets/css/style.min.css'); }}
 {{ HTML::style('assets/plugins/fullcalendar/fullcalendar.css'); }}
 {{ HTML::style('assets/plugins/metrojs/metrojs.css'); }}
+<link href="#" rel="stylesheet" id="theme-color">
 {{ HTML::script('assets/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js'); }}
