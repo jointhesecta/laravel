@@ -36,9 +36,7 @@
                     <img src="assets/img/account/user-icon.png" alt="Key icon">
                 </div>
                 <div class="login-logo">
-                    <a href="#?login-theme-3">
-                        <img src="assets/img/account/LOGO-WFT.gif" alt="WFT">
-                    </a>
+                        <img src="assets/img/account/LOGO-WFT.gif" alt="Company Logo">
                 </div>
                 <hr>
 
@@ -52,8 +50,8 @@
                     </div>
                     @endif
 
-                    @if($errors->isEmpty())
-                    <div class="alert alert-danger hide">
+                    @if(!$errors->isEmpty())
+                    <div class="alert alert-danger">
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <h4>Error!</h4>
                         {{ $errors->first('email') }}
