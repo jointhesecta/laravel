@@ -41,25 +41,38 @@
                     </a>
                 </div>
                 <hr>
+
                 <div class="login-form">
                     <!-- BEGIN ERROR BOX -->
+                    @if (Session::get('loginError'))
+                    <div class="alert alert-danger ">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Error!</h4>
+                        {{ Session::get('loginError') }}
+                    </div>
+                    @endif
+
+                    @if($errors->isEmpty())
                     <div class="alert alert-danger hide">
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <h4>Error!</h4>
-                        Your Error Message goes here
+                        {{ $errors->first('email') }}
+                        {{ $errors->first('password') }}
                     </div>
+                    @endif
                     <!-- END ERROR BOX -->
-                    <form action="index.html" method="post">
-                        <input type="text" placeholder="Username" class="input-field form-control user" />
-                        <input type="password" placeholder="Password" class="input-field form-control password" />
-                        <button type="submit" class="btn btn-login">Login</button>
-                    </form>
+                    {{ Form::open(array('url' => 'login')) }}
+                        {{ Form::text('email', Input::old('email'), array('placeholder' => 'Correo electronico','class' => 'input-field form-control user')) }}
+                        {{ Form::password('password', array('placeholder' => 'Password','class' => 'input-field form-control password')) }}
+                        {{ Form::submit('Login', array('class' => 'btn btn-login')) }}
+                    {{ Form::close() }}
                     <div class="login-links">
                         <a href="password_forgot.html">Forgot password?</a>
                         <br>
                         <a href="signup.html">Don't have an account? <strong>Sign Up</strong></a>
                     </div>
                 </div>
+
             </div>
             <div class="social-login row">
                 <div class="fb-login col-lg-6 col-md-12 animated flipInX">
